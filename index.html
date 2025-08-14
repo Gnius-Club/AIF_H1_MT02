@@ -1,17 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Playbook — 1º Preparatoria — Misión M02</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<main id="playbook" class="playbook">
-<!-- 0) De un Vistazo -->
+<header>
+<h1><span class="book-icon">📋</span> <strong>Playbook Misión M02: Impacto de la IA en Industrias</strong></h1>
+<div class="header-widgets">
+<div class="timer-container">
+<span id="timer">⏱️ 00:00</span>
+<button id="startStop">Start</button>
+<button id="reset">Reset</button>
+</div>
+<div class="theme-toggle">
+<i class="fas fa-sun"></i>
+<label class="switch">
+<input type="checkbox" id="theme-toggle-input">
+<span class="slider round"></span>
+</label>
+<i class="fas fa-moon"></i>
+</div>
+</div>
+</header>
+<div class="main-container">
+<aside class="activity-list">
+<h2>Actividades</h2>
+<ul>
+<li><a href="#activity-0">📝</a></li>
+<li><a href="#activity-1">1</a></li>
+<li><a href="#activity-2">2</a></li>
+<li><a href="#activity-3">3</a></li>
+<li><a href="#activity-4">4</a></li>
+<li><a href="#activity-5">5</a></li>
+</ul>
+<div class="sidebar-info">
+<p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+<p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+</div>
+</aside>
+<main class="content">
+<div class="progress-bar">
+<div class="progress"></div>
+</div>
+<button id="toggle-dialogues">Mostrar todos los diálogos</button>
 <section class="activity-card" id="activity-0">
 <h2 class="activity-title">📝 De un Vistazo: Misión M02 - Impacto de la IA en Industrias</h2>
 <p class="activity-purpose">Resumen de objetivos, secuencia y entregables de la sesión.</p>
@@ -19,8 +55,8 @@
 <section class="overview-block">
 <h3>Objetivos e “I Can”</h3>
 <ul>
-<li>Puedo investigar y curar herramientas de IA relevantes para un sector específico.</li>
-<li>Puedo evaluar el potencial de impacto de herramientas de IA mediante simulaciones o diseños.</li>
+<li>Puedo identificar herramientas de IA relevantes para una industria específica.</li>
+<li>Puedo analizar el potencial transformador de la IA en un sector profesional de mi interés.</li>
 </ul>
 </section>
 <section class="overview-block">
@@ -36,142 +72,140 @@
 <section class="overview-block">
 <h3>Entregable del Micro-Proyecto</h3>
 <ul>
-<li>Un Reporte de Herramientas de IA y su Potencial Disruptivo, incluyendo una lista curada de 2-3 herramientas y una exploración de su aplicación en un sector de interés.</li>
+<li>Reporte de Análisis de Herramientas AI para [Industria], incluyendo lista curada de 2-3 herramientas y exploración de su potencial.</li>
 </ul>
 </section>
 <section class="overview-block">
 <h3>Criterios de calidad</h3>
 <ul>
-<li>Identificación de 2-3 herramientas de IA relevantes para un sector específico.</li>
-<li>Análisis claro del potencial disruptivo de cada herramienta.</li>
-<li>Propuesta creativa (simulación, diseño de servicio o pieza artística) que demuestre la aplicación de la IA.</li>
+<li>Relevancia: Herramientas de IA seleccionadas son directamente aplicables a la industria elegida.</li>
+<li>Análisis: La exploración del potencial demuestra comprensión del impacto y aplicación.</li>
+<li>Claridad: Presentación concisa y estructurada de la información.</li>
+<li>Curación: La lista incluye 2-3 herramientas bien investigadas.</li>
 </ul>
 </section>
 <section class="overview-block">
 <h3>Materiales y preparación</h3>
 <ul>
 <li>Proyector e internet</li>
-<li>Acceso a LLM (Xolo) y portales de herramientas de IA: futurepedia.io, theresanaiforthat.com</li>
-<li>Editor de texto o herramienta de presentación.</li>
-<li>Plantilla de ejemplo lista de reporte o simulación de uso.</li>
+<li>Acceso a LLM (Xolo)</li>
+<li>Portales de herramientas AI: futurepedia.io, theresanaiforthat.com</li>
+<li>Editor de texto o documentos</li>
+<li>Plantilla de ejemplo lista</li>
 </ul>
 </section>
 </div>
 </section>
-<!-- 1) Saludo Interactivo con IA -->
 <section class="activity-card" id="activity-1">
 <h2 class="activity-title">Saludo Interactivo con IA</h2>
-<p class="activity-purpose">Establecer tono profesional, conectar con el tema de la IA en la industria y activar a Xolo.</p>
+<p class="activity-purpose">Activar a Xolo con perfil e intereses; conectar con el foco de la misión.</p>
 <div class="steps">
 <article class="step-card">
 <div class="step-content">
 <h3 class="step-title">Paso 1 — Bienvenida y foco</h3>
-<p class="step-instructions">Proyectar Diapositiva 2. Enuncia el foco conceptual: la IA como motor de transformación industrial y su relevancia profesional.</p>
+<p class="step-instructions">Proyectar Diapositiva 2. Presenta el tema y el valor profesional según la Columna 1.</p>
 </div>
 <div class="collapsible">
 <button type="button" class="collapsible-button">Diálogo Sugerido</button>
 <div class="collapsible-content">
-<p class="dialogue assistant">Equipo: hoy abordaremos cómo la inteligencia artificial está redefiniendo cada sector profesional. Comprender este impacto es crucial para su futuro. Nuestra misión es identificar y analizar herramientas de IA que pueden revolucionar campos específicos, preparándolos para ser agentes de cambio.</p>
+<p class="dialogue assistant">Equipo, hoy abordaremos cómo la Inteligencia Artificial está redefiniendo el panorama profesional en diversas industrias. Comprender este impacto es crucial para su futuro, independientemente de la carrera que elijan. Nuestra misión es identificar y analizar herramientas de IA que ya están transformando sectores específicos.</p>
 </div>
 </div>
 </article>
 <article class="step-card">
 <div class="step-content">
 <h3 class="step-title">Paso 2 — Activación con Xolo</h3>
-<p class="step-instructions">Cada estudiante abre su chat con Xolo y envía un saludo con su perfil de aprendizaje e intereses, haciendo referencia a la misión M02.</p>
+<p class="step-instructions">Cada estudiante envía a Xolo: “Hola Xolo, soy [Nombre], perfil [X]; me interesa [Y]. Estoy en la Misión M02: Impacto de la IA en Industrias.”</p>
 </div>
 <div class="collapsible">
 <button type="button" class="collapsible-button">Diálogo Sugerido</button>
 <div class="collapsible-content">
-<p class="dialogue assistant">Activen a Xolo con su perfil e intereses. Un mensaje como: "Hola Xolo, soy [Nombre], mi perfil es [X], me interesa [Y]. Estoy listo para la Misión M02, enfocada en IA e industrias." Xolo les confirmará y recordará los criterios de la sesión.</p>
+<p class="dialogue assistant">Activen a Xolo con su perfil de aprendizaje e intereses. Envienle un mensaje como: 'Hola Xolo, soy [Nombre], perfil [X]; me interesa [Y]. Estoy en la Misión M02: Impacto de la IA en Industrias.' Xolo confirmará y les recordará los criterios de la sesión.</p>
 </div>
 </div>
 </article>
 </div>
 </section>
-<!-- 2) “I Can” + Desafío -->
 <section class="activity-card" id="activity-2">
 <h2 class="activity-title">“I Can Statement” + Desafío</h2>
-<p class="activity-purpose">Explicitar metas de aprendizaje y presentar el reto de investigación y análisis de herramientas de IA.</p>
+<p class="activity-purpose">Alinear expectativas y definir el reto práctico.</p>
 <div class="steps">
 <article class="step-card">
 <div class="step-content">
 <h3 class="step-title">Paso 1 — Presenta el reto</h3>
-<p class="step-instructions">Proyectar Diapositiva 3. Define el reto: investigar y analizar herramientas de IA para un sector de interés.</p>
+<p class="step-instructions">Proyectar Diapositiva 3. Describe el reto y la meta observable, derivado de Columna 1 y 3.</p>
 </div>
 <div class="collapsible">
 <button type="button" class="collapsible-button">Diálogo Sugerido</button>
 <div class="collapsible-content">
-<p class="dialogue assistant">El reto de hoy es concreto: investigarán un sector profesional de su interés y curarán una lista de herramientas de IA con potencial disruptivo. El éxito se medirá por la relevancia de las herramientas y la claridad con la que demuestren su impacto.</p>
+<p class="dialogue assistant">El reto de hoy es convertirse en curadores de tecnología. Deberán investigar un sector profesional de su interés y seleccionar de 2 a 3 herramientas de IA que lo estén revolucionando. El entregable será un reporte que demuestre su comprensión del potencial de estas herramientas.</p>
 </div>
 </div>
 </article>
 <article class="step-card">
 <div class="step-content">
 <h3 class="step-title">Paso 2 — Escribe tu “I Can”</h3>
-<p class="step-instructions">Proyectar Diapositiva 4. Los estudiantes redactan su "I Can" statement.</p>
+<p class="step-instructions">Proyectar Diapositiva 4. Cada estudiante redacta 1 “I Can” concreto alineado al entregable de Columna 2.</p>
 </div>
 <div class="collapsible">
 <button type="button" class="collapsible-button">Diálogo Sugerido</button>
 <div class="collapsible-content">
-<p class="dialogue assistant">Ahora, formulen su propio "I Can Statement" en una frase. Por ejemplo: "Puedo investigar y curar herramientas de IA relevantes para un sector específico, evaluando su potencial de impacto." Tómense un minuto para redactarlo.</p>
+<p class="dialogue assistant">Ahora, formulen su propio 'I Can Statement' en una frase. Por ejemplo: 'Puedo investigar y curar herramientas de IA para la industria [X], justificando su impacto con [criterio].' Tienen un minuto para redactarlo.</p>
 </div>
 </div>
 </article>
 </div>
 </section>
-<!-- 3) AI GYM -->
 <section class="activity-card" id="activity-3">
 <h2 class="activity-title">AI GYM</h2>
-<p class="activity-purpose">Formalizar la metodología de investigación y curación de herramientas de IA.</p>
+<p class="activity-purpose">Formalizar el marco/técnica de IA de la sesión.</p>
 <div class="steps">
 <article class="step-card">
 <div class="step-content">
 <h3 class="step-title">Paso 1 — Marco del día</h3>
-<p class="step-instructions">Proyectar Diapositiva 5. Introduce el uso de portales de herramientas de IA (futurepedia.io, theresanaiforthat.com) como método de investigación.</p>
+<p class="step-instructions">Proyectar Diapositiva 5. Introduce el framework según Columna 3 (p. ej., R.C.T.F.A., Rol Prompt, Few-Shot, CoT, citación/antisesgos, eficiencia de modelos, Markdown→presentación, depuración en Replit).</p>
 </div>
 <div class="collapsible">
 <button type="button" class="collapsible-button">Diálogo Sugerido</button>
 <div class="collapsible-content">
-<p class="dialogue assistant">En el AI GYM, aprenderemos a usar portales especializados como futurepedia.io o theresanaiforthat.com para identificar herramientas de IA. Este enfoque nos permite ir más allá de las herramientas populares y descubrir soluciones específicas. Un error común es quedarse con la primera búsqueda; eviten eso explorando filtros y categorías. Validaremos la utilidad de la herramienta por su aplicabilidad directa al sector.</p>
+<p class="dialogue assistant">El marco que usaremos hoy es la exploración sistemática de portales de herramientas de IA, como futurepedia.io o theresanaiforthat.com. Esto es vital para no perderse en la vasta oferta de IA. Un error común es buscar herramientas sin un propósito claro. Otro, es no validar su relevancia. Usaremos estos portales para identificar soluciones concretas para problemas específicos de una industria.</p>
 </div>
 </div>
 </article>
 <article class="step-card">
 <div class="step-content">
 <h3 class="step-title">Paso 2 — Mini-demostración</h3>
-<p class="step-instructions">Proyectar Diapositiva 6. Demuestra en vivo cómo usar un portal para buscar una herramienta de IA para un sector de ejemplo.</p>
+<p class="step-instructions">Proyectar Diapositiva 6. Construye ejemplo mínimo alineado a las tres columnas del input.</p>
 </div>
 <div class="collapsible">
 <button type="button" class="collapsible-button">Diálogo Sugerido</button>
 <div class="collapsible-content">
-<p class="dialogue assistant">Observen cómo navego en uno de estos portales. Si busco 'IA para medicina', puedo filtrar por tipo de tarea o aplicación. ¿Entienden cómo el uso de filtros afina la búsqueda? ¿Identifican cómo la descripción de la herramienta sugiere su potencial disruptivo?</p>
+<p class="dialogue assistant">Observen cómo navego en futurepedia.io. Utilizaré la función de búsqueda o las categorías para encontrar herramientas relacionadas con, por ejemplo, 'marketing digital'. Verifiquen: ¿La herramienta parece relevante? ¿Tiene un caso de uso claro para la industria? ¿Cómo la describirían en una frase?</p>
 </div>
 </div>
 </article>
 <article class="step-card">
 <div class="step-content">
 <h3 class="step-title">Paso 3 — Check rápido</h3>
-<p class="step-instructions">Proyectar Diapositiva 7. Verifica comprensión sobre la búsqueda de herramientas.</p>
+<p class="step-instructions">Proyectar Diapositiva 7. Verifica comprensión con 2 preguntas breves.</p>
 </div>
 <div class="collapsible">
 <button type="button" class="collapsible-button">Diálogo Sugerido</button>
 <div class="collapsible-content">
-<p class="dialogue assistant">Check rápido: ¿Cuál es la ventaja principal de usar un portal de herramientas de IA frente a una búsqueda general en internet? ¿Qué dos datos clave buscarían en la descripción de una herramienta para evaluar su relevancia?</p>
+<p class="dialogue assistant">Pregunta 1: ¿Por qué es útil usar un portal de herramientas de IA en lugar de una búsqueda general en la web? Pregunta 2: ¿Qué criterio usarían para descartar rápidamente una herramienta que no es relevante para su industria?</p>
 </div>
 </div>
 </article>
 </div>
 </section>
-<!-- 4) Brain Spark -->
 <section class="activity-card" id="activity-4">
 <h2 class="activity-title">Brain Spark</h2>
-<p class="activity-purpose">Producir el Reporte de Herramientas de IA y su Potencial Disruptivo.</p>
+<p class="activity-purpose">Producir el entregable tangible del Micro-Proyecto.</p>
 <div class="steps">
 <article class="step-card">
 <div class="step-content">
 <h3 class="step-title">Paso 1 — Producción</h3>
-<p class="step-instructions">Proyectar Diapositiva 8. Los estudiantes investigan su sector de interés y seleccionan 2-3 herramientas de IA. Deben iniciar la exploración de su potencial mediante una simulación, diseño de servicio o pieza artística.</p>
+<p class="step-instructions">Proyectar Diapositiva 8. Indica el producto específico (Columna 2) y checklist de calidad (Columna 3). Tiempo de trabajo autónomo.</p>
 </div>
 <div class="collapsible">
 <button type="button" class="collapsible-button">Diálogo Sugerido</button>
@@ -183,61 +217,61 @@
 <article class="step-card">
 <div class="step-content">
 <h3 class="step-title">Paso 2 — Iteración</h3>
-<p class="step-instructions">Proyectar Diapositiva 9. Indica una iteración específica: refinar la exploración del potencial de las herramientas, asegurando que la simulación/diseño/pieza artística sea clara y demuestre el impacto.</p>
+<p class="step-instructions">Proyectar Diapositiva 9. Pide una mejora concreta basada en criterios (p. ej., refinar prompt con restricciones, añadir contraejemplos, justificar modelo, agregar citación, etc.).</p>
 </div>
 <div class="collapsible">
 <button type="button" class="collapsible-button">Diálogo Sugerido</button>
 <div class="collapsible-content">
-<p class="dialogue assistant">Antes de finalizar la producción: ¿La simulación o el diseño de servicio realmente ilustra cómo la herramienta revoluciona el sector? ¿La pieza artística comunica el concepto de manera efectiva? Ajusten y mejoren la claridad de su propuesta.</p>
+<p class="dialogue assistant">Antes de finalizar, revisen su selección. ¿Las herramientas elegidas son realmente transformadoras o solo incrementales? ¿Su análisis de potencial es convincente y específico? Si es necesario, ajusten su curación o profundicen en la simulación de uso.</p>
 </div>
 </div>
 </article>
 <article class="step-card">
 <div class="step-content">
 <h3 class="step-title">Paso 3 — Evidencia</h3>
-<p class="step-instructions">Proyectar Diapositiva 10. Solicita la entrega del reporte.</p>
+<p class="step-instructions">Proyectar Diapositiva 10. Solicita evidencia: enlace/captura/texto final/mini demo.</p>
 </div>
 <div class="collapsible">
 <button type="button" class="collapsible-button">Diálogo Sugerido</button>
 <div class="collapsible-content">
-<p class="dialogue assistant">Suban su Reporte de Herramientas de IA y Potencial Disruptivo al canal indicado. Nombren el archivo: 'M02_Reporte_[SuNombre/Equipo]_v1'.</p>
+<p class="dialogue assistant">Suban su 'Reporte de Análisis de Herramientas AI' al canal indicado. Asegúrense de que incluya la lista de herramientas, su descripción y la exploración de su potencial. Nombren su archivo: M02_AnalisisAI_[SuNombre]_[Industria].</p>
 </div>
 </div>
 </article>
 </div>
 </section>
-<!-- 5) GNIUS STORM -->
 <section class="activity-card" id="activity-5">
 <h2 class="activity-title">GNIUS STORM</h2>
-<p class="activity-purpose">Exhibición breve, síntesis de aprendizajes y conexión profesional.</p>
+<p class="activity-purpose">Exhibir resultados y cerrar con síntesis accionable.</p>
 <div class="steps">
 <article class="step-card">
 <div class="step-content">
 <h3 class="step-title">Paso 1 — Showcase relámpago</h3>
-<p class="step-instructions">2–3 estudiantes/equipos muestran una herramienta y su potencial disruptivo en 30–45 segundos.</p>
+<p class="step-instructions">2–3 equipos/personas muestran evidencia clave (30–45 s c/u).</p>
 </div>
 <div class="collapsible">
 <button type="button" class="collapsible-button">Diálogo Sugerido</button>
 <div class="collapsible-content">
-<p class="dialogue assistant">En el Showcase relámpago, describan en 30 segundos una de las herramientas que curaron, su aplicación en el sector y cómo demuestra potencial disruptivo.</p>
+<p class="dialogue assistant">Compartan su hallazgo más interesante: una herramienta de IA que les haya sorprendido por su impacto en la industria que investigaron. En 30 segundos, describan la herramienta y el problema que resuelve.</p>
 </div>
 </div>
 </article>
 <article class="step-card">
 <div class="step-content">
 <h3 class="step-title">Paso 2 — Cierre ejecutivo</h3>
-<p class="step-instructions">Proyectar Diapositiva 11. Síntesis: 1 aprendizaje clave, 1 criterio de calidad que marcó la diferencia, y el siguiente paso aplicable fuera del aula.</p>
+<p class="step-instructions">Proyectar Diapositiva 11. Entrega síntesis: 1 aprendizaje clave + 1 criterio de calidad que marcó la diferencia + siguiente paso aplicable fuera del aula.</p>
 </div>
 <div class="collapsible">
 <button type="button" class="collapsible-button">Diálogo Sugerido</button>
 <div class="collapsible-content">
-<p class="dialogue assistant">Síntesis de la misión: El aprendizaje clave fue la importancia de la investigación específica de herramientas. El criterio que marcó la diferencia fue la claridad en la demostración del potencial disruptivo. El siguiente paso aplicado fuera del aula es aplicar esta metodología para identificar tecnologías emergentes en cualquier campo de interés, o usar estas herramientas en proyectos personales.</p>
+<p class="dialogue assistant">Hoy aprendimos que la IA no es una tecnología monolítica, sino un conjunto de soluciones específicas que transforman industrias. La clave fue la capacidad de curar información relevante y proyectar su impacto. Como siguiente paso, les animo a seguir explorando cómo la IA puede optimizar o crear nuevas oportunidades en cualquier campo que les apasione. Esta habilidad de identificar y aplicar tecnología será un diferenciador en su futuro profesional.</p>
 </div>
 </div>
 </article>
 </div>
 </section>
 </main>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
