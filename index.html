@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook: Sesión 2 - 1ro Preparatoria</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Playbook-H1-TM02</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 2 - 1ro Preparatoria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 2 - 1o de Preparatoria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
             </div>
             <div class="theme-toggle">
                 <i class="fas fa-sun"></i>
@@ -28,7 +27,6 @@
             </div>
         </div>
     </header>
-
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
@@ -40,251 +38,401 @@
                 <li><a href="#activity-4">4</a></li>
                 <li><a href="#activity-5">5</a></li>
             </ul>
-            <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-            </div>
         </aside>
-
         <main class="content">
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Misión M02 - Impacto de la IA en Industrias</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos de Aprendizaje:</strong>
-                                    <ul>
-                                        <li>Puedo identificar herramientas de IA relevantes para una industria específica.</li>
-                                        <li>Puedo analizar el potencial transformador de la IA en un sector profesional de mi interés.</li>
-                                        <li>Objetivo general de la sesión: Desarrollar la habilidad de investigar y evaluar herramientas de IA específicas para una industria, utilizando portales especializados para identificar su potencial transformador.</li>
-                                    </ul>
-                                    <strong>Secuencia Didáctica:</strong>
-                                    <ul>
-                                        <li><strong>Actividad 1:</strong> Saludo Interactivo con IA (3 min)</li>
-                                        <li><strong>Actividad 2:</strong> “I Can Statement” + Desafío (5–7 min)</li>
-                                        <li><strong>Actividad 3:</strong> AI GYM (10–12 min)</li>
-                                        <li><strong>Actividad 4:</strong> Brain Spark (17–20 min)</li>
-                                        <li><strong>Actividad 5:</strong> GNIUS STORM (5 min)</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                        <li>Un "Reporte de Análisis de Herramientas AI para [Industria]" que incluya una lista curada de 2-3 herramientas y una exploración de su potencial, demostrando relevancia, análisis y claridad.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector e internet.</li>
-                                        <li>Acceso a LLM (Xolo).</li>
-                                        <li>Portales de herramientas AI: <a href="https://www.futurepedia.io/" target="_blank">futurepedia.io</a>, <a href="https://theresanaiforthat.com/" target="_blank">theresanaiforthat.com</a>.</li>
-                                        <li>Editor de texto o documentos (ej. Google Docs, Word).</li>
-                                        <li>Plantilla de ejemplo lista.</li>
-                                        <li>Presentación (10 diapositivas).</li>
-                                    </ul>
-                                    <strong>Preparación Previa para esta sesión:</strong>
-                                    <ol>
-                                        <li><strong>Verificación de Materiales:</strong> Asegurarse de que los números de diapositiva en el Playbook coincidan con la Presentación para una navegación fluida.</li>
-                                        <li><strong>Prueba de Demo:</strong> Realizar una prueba de la demostración en vivo de futurepedia.io, incluyendo el proceso de compartir pantalla. Preparar un Plan B con capturas de pantalla clave en caso de fallo técnico.</li>
-                                        <li><strong>Revisar Recursos:</strong> Abrir la pestaña de theresanaiforthat.com antes de la clase para leer el nombre directamente y evitar errores de pronunciación.</li>
-                                        <li><strong>Alineación con Xolo:</strong> Confirmar que el guion de Xolo está actualizado para la Misión M02 (exploración de portales) y no para la Misión M01 (RCTF).</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> usar portales tecnológicos y LLMs para realizar búsquedas, filtrado y síntesis de herramientas digitales y comprender el impacto sectorial y la evaluación ética de la inteligencia artificial.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Explícame qué es curaduría tecnológica y por qué “encontrar la herramienta correcta” cambia el resultado más que solo “probar apps”. Analicemos cómo evaluar herramientas sin perdernos: (1) tarea exacta que resuelve, (2) público/usuario, (3) entrada y salida, (4) riesgos y límites. Guíame para comparar 2 herramientas de la misma categoría y justificar cuál elegiría y por qué.</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Curaduría Tecnológica: Es el arte de elegir la herramienta digital exacta para una tarea específica, evitando perderse en un mar de aplicaciones innecesarias.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar plataformas de IA para investigar, comparar y seleccionar herramientas digitales basadas en criterios de utilidad y riesgo.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes sectores profesionales (salud, arte, ingeniería) para entender cómo cambian los criterios de elección.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Dispositivo con acceso a internet (Laptop o Tablet) (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Acceso a ChatGPT (https://chatgpt.com/), Gemini (https://gemini.google.com/) y Claude (https://claude.ai/)</label>
+                        <label><input type="checkbox"> Portales de curaduría de IA (ej. Futurepedia o There's An AI For That)</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa interacción con Modelos de Lenguaje (LLMs)</label>
+                        <label><input type="checkbox"> 📋 Guía de evaluación: Analizar tarea, usuario, entrada/salida y riesgos.</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Mantener la privacidad de tus cuentas, no compartir datos personales sensibles en los chats y cerrar sesión al terminar.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre curaduría tecnológica y criterios de evaluación (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si una plataforma de IA no carga:</strong> Verifica la conexión a internet y asegúrate de no tener bloqueadores de anuncios activos.</li>
+                            <li><strong>Si los resultados de búsqueda son muy genéricos:</strong> Pide a XOLO que te ayude a refinar los términos de búsqueda para el sector específico.</li>
+                            <li><strong>Si hay errores en el análisis:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar los criterios. Pídeles que compartan su duda con XOLO.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo Interactivo con IA ⏰ 3 minutos</h2>
-                <p>Activar a Xolo con perfil e intereses; conectar con el foco de la misión.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Bienvenida y foco ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 1) Presenta el tema y el valor profesional.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Equipo, hoy abordaremos cómo la <strong>Inteligencia Artificial</strong> está redefiniendo el panorama profesional en diversas industrias. Comprender este impacto es crucial para su futuro, independientemente de la carrera que elijan. Nuestra misión es identificar y analizar <strong>herramientas de IA</strong> que ya están transformando <strong>sectores específicos</strong>.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Activación con Xolo ⏰ 2 minutos</h3>
-                            <p>Cada estudiante envía a Xolo: <strong>“Hola Xolo, soy [Nombre], perfil [X]; me interesa [Y]. Estoy en la Misión M02: Impacto de la IA en Industrias.”</strong></p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Activen a <strong>Xolo</strong> con su <strong>perfil de aprendizaje</strong> e intereses. Envíenle un mensaje como: <strong>'Hola Xolo, soy [Nombre], perfil [X]; me interesa [Y]. Estoy en la Misión M02: Impacto de la IA en Industrias.'</strong> (Nota para el docente: La respuesta esperada de Xolo debe alinearse con la Misión 2, algo como: "¡Hola! Para la <strong>Misión 2</strong> nos enfocaremos en la <strong>exploración de portales de IA</strong> como <strong>futurepedia.io</strong>. Nuestro objetivo es convertirnos en <strong>curadores de tecnología</strong>. ¿Listos?")</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "¡Hoy se convertirán en los arquitectos de su propio ecosistema de herramientas inteligentes!".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre Curaduría Tecnológica y Evaluación de IA.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A seleccionar y justificar el uso de herramientas de IA para que sus soluciones sean eficientes y responsables.</p>
+                        <p><strong>Aplicación real:</strong> Los líderes de innovación en empresas tecnológicas usan esta metodología para decidir qué herramientas comprar, ahorrando tiempo y evitando riesgos de seguridad.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 2: A.I. GYM -->
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: “I Can Statement” + Desafío ⏰ 5-7 minutos</h2>
-                <p>Alinear expectativas y definir el reto práctico.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Presenta el reto ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 2) Describe el reto y la meta observable.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">El reto de hoy es convertirse en <strong>curadores de tecnología</strong>. Deberán investigar un sector profesional de su interés y seleccionar de 2 a 3 <strong>herramientas de IA</strong> que lo estén revolucionando. El entregable será un <strong>reporte</strong> que demuestre su comprensión del potencial de estas herramientas.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Escribe tu “I Can” ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 3) Cada estudiante redacta 1 “I Can” concreto alineado al entregable.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo evaluar herramientas considerando la tarea, el usuario y los resultados esperados.</li>
+                            <li>Introduce el concepto de pensamiento crítico aplicado a las promesas de la IA.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a investigar herramientas usando criterios de filtrado profesional.</li>
+                            <li>Aprender sobre los límites éticos y de privacidad de las aplicaciones de IA.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, formulen su propio <strong>'I Can Statement'</strong> en una frase. Por ejemplo: 'Puedo <strong>investigar y curar herramientas de IA</strong> para la industria del marketing digital, justificando su <strong>impacto</strong> con métricas de ventas mensuales'. Tienen un minuto para redactarlo.</p>
-                            </div>
-                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar criterios de selección para evaluar herramientas de IA y entender la curaduría tecnológica.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Bienvenidos a una nueva misión! Hoy vamos a aprender algo que los separará de los usuarios comunes: la curaduría tecnológica. No se trata de usar la IA porque está de moda, sino de saber elegir la herramienta exacta para el problema exacto. Abran el chat con XOLO y salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Pregúntenle qué hace que una herramienta sea mejor que otra y cómo evaluar sus riesgos. ¡Él es su guía experto en este viaje!</p>
                     </div>
                 </div>
             </div>
-            
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: AI GYM ⏰ 10-12 minutos</h2>
-                <p>Formalizar el marco/técnica de IA de la sesión.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Marco del día ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 4) Introduce el framework de exploración sistemática de portales.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">El marco que usaremos hoy es la <strong>exploración sistemática</strong> de <strong>portales de herramientas de IA</strong>, como <a href="https://www.futurepedia.io/" target="_blank"><strong>futurepedia.io</strong></a> o <a href="https://theresanaiforthat.com/" target="_blank"><strong>theresanaiforthat.com</strong></a>. (Nota para el docente: El nombre 'theresanaiforthat.com' es complejo. Se recomienda mostrarlo en pantalla al mencionarlo y añadir un enlace en la presentación.) Esto es vital para no perderse en la vasta oferta de IA. Un error común es buscar herramientas sin un propósito claro. Otro, es no validar su relevancia. Usaremos estos portales para identificar soluciones concretas para problemas específicos de una industria.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Mini-demostración ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 5) Modela en vivo cómo pedirle a Xolo que guíe la exploración de herramientas en un portal.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, voy a usar a <strong>Xolo</strong> para que nos guíe en esta exploración. Observen el prompt que usaré para pedirle ayuda: <strong>“Xolo,  me interesa la industria [X]. Guíame para explorar portales como futurepedia.io y encontrar 2 o 3 herramientas de IA que estén transformando este sector. Explícame cómo puedo evaluar su impacto y decidir cuál tiene mayor potencial para mejorar el trabajo en esta industria.”</strong></p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los dispositivos de acceso conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Check rápido ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 6) Verifica comprensión con 2 preguntas breves.</p>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique la curaduría de herramientas en un sector profesional.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para crear una curaduría de herramientas para un sector elegido.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Analizar la utilidad de las herramientas seleccionadas y probar su lógica.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Ayúdame a curar 2–3 herramientas de IA para un sector que elija. Guíame a escribir una mini-ficha por herramienta (qué hace, tarea concreta, beneficio y riesgo). Luego acompáñame a decidir una: ¿cuál usaría primero y con qué objetivo? Ejecuta: entrega mi “Top 3” final con una recomendación argumentada y un mini plan de uso (primer paso + criterio de éxito)."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Pregunta 1: ¿Qué elementos de mi <strong>prompt</strong> ayudaron a <strong>Xolo</strong> a darnos una <strong>guía útil</strong>? Pregunta 2: ¿Cómo podemos usar la respuesta de <strong>Xolo</strong> para empezar nuestra propia <strong>investigación</strong> en los <strong>portales</strong>?</p>
-                            </div>
-                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿La herramienta seleccionada realmente resuelve la tarea principal planteada?</li>
+                            <li>¿Qué sucede si intentas usar la herramienta para un usuario con necesidades diferentes?</li>
+                            <li>¿Funciona igual la herramienta con datos de entrada simples vs complejos?</li>
+                            <li>¿Cómo impacta el uso de estas herramientas en el desarrollo profesional del sector elegido?</li>
+                            <li>¿Qué medidas de uso responsable y privacidad identificaste como críticas para estas herramientas?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es momento de pasar a la acción! Vamos a crear una curaduría aplicada. Elijan un sector, como la medicina o el diseño gráfico, y pidan a XOLO que los ayude a encontrar las 3 mejores herramientas de IA para ese campo. El objetivo es crear un 'Top 3' con fichas técnicas reales. Por ejemplo, podrían investigar herramientas de IA para optimizar la logística en desastres naturales. Sigan el flujo: idear el VIBE con XOLO, generar su GCS y decidir cuál es su recomendación número uno. Si se traban o no entienden un riesgo técnico, pregúntenle a XOLO, él los ayudará a depurar su análisis. ¡A crear!</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya evalué herramientas de productividad. ¿Puedes enseñarme cómo aplicar estos criterios de curaduría a herramientas de IA generativa de código o modelos científicos?"</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
             <div class="activity-card" id="activity-4">
-                <h2>⚡ Actividad 4: Brain Spark ⏰ 17-20 minutos</h2>
-                <p>Producir el entregable tangible del Micro-Proyecto.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Producción ⏰ 12 minutos</h3>
-                            <p>(Proyectar Diapositiva 7) Indica el producto específico y checklist de calidad. Tiempo de trabajo autónomo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">N/A</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Iteración ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 8) Pide una mejora concreta basada en criterios de calidad.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Antes de finalizar, revisen su selección. ¿Las herramientas elegidas son realmente <strong>transformadoras</strong> o solo <strong>incrementales</strong>? ¿Su <strong>análisis de potencial</strong> es convincente y específico? Si es necesario, ajusten su <strong>curación</strong> o profundicen en la simulación de uso.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Evidencia ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 9) Solicita el entregable final.</p>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué criterios de impacto sectorial consideró al elegir sus herramientas.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué sectores profesionales crees que se beneficiarán más de una buena curaduría tecnológica? ¿Qué riesgo te sorprendió más?</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Abran un editor de texto o un documento en la nube para crear su reporte. Una vez finalizado, suban su <strong>'Reporte de Análisis de Herramientas AI'</strong> al canal indicado. Asegúrense de que incluya la <strong>lista de herramientas</strong>, su <strong>descripción</strong> y la <strong>exploración de su potencial</strong>. Nombren su archivo: <strong>M02_AnalisisAI_[SuNombre]_[Industria]</strong>.</p>
-                            </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi selección de herramientas optimiza el trabajo en [SECTOR]. Me sorprendió que el límite técnico de [HERRAMIENTA] fuera [LÍMITE]."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
             <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: GNIUS STORM ⏰ 5 minutos</h2>
-                <p>Exhibir resultados y cerrar con síntesis accionable.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Showcase relámpago ⏰ 3 minutos</h3>
-                            <p>2–3 equipos/personas muestran evidencia clave (30–45 s c/u).</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Compartan su hallazgo más interesante: una <strong>herramienta de IA</strong> que les haya sorprendido por su <strong>impacto</strong> en la industria que investigaron. En 30 segundos, describan la herramienta y el problema que resuelve.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Cierre ejecutivo ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 10) Entrega síntesis: 1 aprendizaje clave + 1 criterio de calidad que marcó la diferencia + siguiente paso aplicable.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Hoy aprendimos que la IA no es una tecnología monolítica, sino un conjunto de soluciones específicas que transforman industrias. La clave fue la capacidad de <strong>curar información relevante</strong> y <strong>proyectar su impacto</strong>. Como siguiente paso, les animo a seguir explorando cómo la IA puede optimizar o crear nuevas oportunidades en cualquier campo que les apasione. Esta habilidad de <strong>identificar y aplicar tecnología</strong> será un diferenciador en su futuro profesional.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
                     </div>
                 </div>
             </div>
@@ -292,4 +440,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-</html>
+</html></html>
